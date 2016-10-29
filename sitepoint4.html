@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sitepoint example</title>
+</head>
+<body>
+<script>
+	
+var test = "I'm global";
+
+function testScope() {
+  test = "I'm local";
+
+  console.log(test);     
+}
+
+console.log(test);     // output: I'm global
+
+testScope();           // output: I'm local
+
+console.log("global value reassigned to " + test);     // output: I'm local (the global variable is reassigned)
+
+
+</script>
+</body>
+</html>

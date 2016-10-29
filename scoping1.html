@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scoping Exploration 1 Sitepoint Examples</title>
+</head>
+<body>
+<script>
+	
+var locales = {
+		  europe: function() {          // The Europe continent's local scope
+		    var myFriend = "Monique";
+
+				    var france = function() {   // The France country's local scope
+						      var paris = function() {  // The Paris city's local scope
+						        console.log(myFriend);
+						      };
+
+				      paris();
+				    };
+
+		    france();
+			}
+
+ };
+
+locales.europe();
+
+//how do I create another key value pair for locales? 
+
+
+
+
+</script>
+</body>
+</html>

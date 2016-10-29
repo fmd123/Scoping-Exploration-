@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sitepoint6 error on their JS Bin example</title>
+</head>
+<body>
+<script>
+
+debugger;
+showState();            // output: Ready
+
+function showState() {
+  console.log("Ready");
+} 
+
+showState(); 			//output: ready
+
+var showState = function() {
+  console.log("Idle");
+};
+
+showState(); 			//output:Idle
+
+
+
+</script>
+
+</body>
+</html>

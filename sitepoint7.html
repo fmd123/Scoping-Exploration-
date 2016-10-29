@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sitepoint6 error on their JS Bin example</title>
+</head>
+<body>
+<script>
+debugger;
+	showState();            // output: Ready
+var showState = function() {
+  console.log("Idle");
+};
+ 
+showState();
+function showState() {
+  console.log("Ready");
+}
+showState(); 
+//if this is the only invocation of showState() (ie comment out the other 2 showState invocations) then it will output "Idle" It only uses the last declaration of showState.	
+</script>
+
+</body>
+</html>

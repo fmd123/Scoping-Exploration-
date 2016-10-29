@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sitepoint example</title>
+</head>
+<body>
+<script>
+	
+
+	var test = "I'm global";
+
+function testScope () {
+	var test = "I'm local";
+
+			  	function nested (){
+			  		console.log ("inner " + test);
+			  	}
+
+	console.log (test); 
+	nested();    
+}//end of testScope()
+
+testScope();           // output: I'm local and inner I'm local
+
+console.log (test);    // output: I'm global
+
+
+</script>
+</body>
+</html>
