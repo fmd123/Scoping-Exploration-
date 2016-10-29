@@ -22,7 +22,8 @@ function testScope () {
 }//end of testScope()
 
 testScope();           // output: I'm local 
-nested();             // output will be error because nested() is hidden inside testScope.
+nested();             // output will be "uncaught reference error. Nested is not defined"
+						// nested() is hidden inside testScope.
 
 console.log (test);    // No output because program doesn't reach this step due to error with nested()
 
