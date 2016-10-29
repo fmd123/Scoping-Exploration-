@@ -1,0 +1,35 @@
+sitepoint8.html<!DOCTYPE html>
+<html>
+<head>
+	<title>sitepoint6 </title>
+</head>
+<body>
+<script>
+
+debugger;
+showState();            // output: Ready
+
+function showState() {
+  console.log("Ready");
+} 
+
+showState(); 			//output: ready
+
+var showState = function() {
+  console.log("Idle");
+};
+
+showState(); 			//output:Idle
+
+function showState() {
+  console.log("Ready");
+} 
+
+showState();
+
+
+
+</script>
+
+</body>
+</html>
